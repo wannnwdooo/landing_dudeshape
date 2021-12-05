@@ -260,46 +260,36 @@ body {
     .burger__line {
         display: none;
     }
-
     .first {
         display: none;
     }
     .second {
         display: none;
     }
-
     .third {
         display: none;
     }
-
     .fourth {
         display: none;
     }
-
     .burger__menu {
         display: none;
     }
-
     .burger__menu__item {
         display: none;
     }
-
     .burger__menu__link {
         display: none;
     }
-
     .burger__menu__user {
         display: none;
     }
-
     .user {
         display: none;
     }
-
     .user__item {
         display: none;
     }
-
     .user__link {
         display: none;
     }
