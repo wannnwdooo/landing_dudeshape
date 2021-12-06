@@ -206,6 +206,9 @@ body {
         text-decoration: inherit;
         color: #222222;
     }
+    .menu__link:hover {
+        text-decoration: underline;
+    }
     .user-menu__list {
         display: flex;
         padding: 45px 0 0 0 ;
@@ -299,17 +302,182 @@ body {
     background: #F9F6F5;
 }
 .main__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
 }
-.main__container__slider{
+@media (max-width: 1200px) {
+    .main__container {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+@media (max-width: 992px) {
+    .main__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 992px) {
+    .main-body {
+        grid-area: 2 / 1 / 3 / 2;
+        margin: 0 auto;
+    }
+}
+
+.main-body__title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 125%;
+    margin: 0 0 30px 0;
+}
+@media (max-width: 992px) {
+    .main-body__title {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media (max-width: 550px) {
+    .main-body__title {
+        font-size: 40px;
+
+    }
+}
+.main-body__text{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #555555;
+    margin: 0 0 30px 0;
+}
+@media (max-width: 992px) {
+    .main-body__text {
+        text-align: center;
+        padding: 0 20px 0 5px;
+    }
+}
+.search{
+    width: 326px;
+    height: 48px;
+    position: relative;
+    margin: 0 0 60px 0;
+}
+@media (max-width: 400px) {
+    .search {
+        width: 280px;
+        margin: 0 0 30px 0;
+    }
+}
+.search__field {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 143%;
+    height: 46px;
+    color: #999999;
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 324px;
+    padding: 0 60px 0 20px;
+}
+.search__field:hover {
+    color: #222222;
+}
+@media (max-width: 400px) {
+    .search__field {
+        width: 280px;
+    }
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.search__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.main-body__button{
+    margin: 0 0 109px 0;
+}
+@media (max-width: 400px) {
+    .main-body__button {
+        margin: 0 0 69px 0;
+    }
+}
+.button-main {
+    padding: 16px 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #FFFFFF;
+    background: #402F2C;
+    max-width: 148px;
+    transition: all 0.3s ease 0s;
+}
+.button-main:hover {
+    background: #ea9b81;
+}
+
+.main__container__slider {
     max-width: 796px;
+    grid-auto-rows: max-content;
+    display: grid;
+    justify-items: flex-start;
+}
+@media (max-width: 992px) {
+    .slider {
+        grid-area: 1 / 1 / 2/ 2;
+        margin: 0 auto;
+    }
 }
 .slider__block {
-    border: 2px solid #000000;
-    max-width: 100%;
+    width: 100%;
     overflow: hidden;
+    position: relative;
 }
 .slider__block__line {
     display: flex;
     transition: all ease 1s;
+
+}
+.slider__block__buttons {
+    background: #F9F6F5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+
+}
+.slider-button__prev {
+    background: url(../img/main/prev.svg) 50% 50% no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 49px 16px 49px 24px;
+}
+
+@media (max-width: 550px) {
+    .slider-button__prev {
+        padding: 39px 12px 39px 20px;
+
+    }
+}
+.slider-button__next {
+    background: url(../img/main/next.svg) 50% 50% no-repeat;
+    background-size: contain;
+    border: none;
+    padding: 20px 25px 20px 16px;
+}
+@media (max-width: 550px) {
+    .slider-button__next {
+        padding: 20px 12px 20px 20px;
+
+    }
 }
