@@ -299,10 +299,15 @@ body {
     background: #F9F6F5;
 }
 .main__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 }
 .main__container__slider{
     max-width: 796px;
+    grid-auto-rows: max-content;
+    max-width: 796px;
+    display: grid;
+    justify-items: flex-start;
 }
 .slider__block {
     border: 2px solid #000000;
