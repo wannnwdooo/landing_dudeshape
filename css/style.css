@@ -109,7 +109,7 @@ body {
     .burger__line {
     position: absolute;
     top: 47px;
-    right: 10px;
+    right: 20px;
     width: 35px;
     height: 3px;
     background-color:#222222;
@@ -295,3 +295,21 @@ body {
     }
 }
 /*------------------------------------Main----------------------------*/
+.main {
+    background: #F9F6F5;
+}
+.main__container {
+    display: flex;
+}
+.main__container__slider{
+    max-width: 796px;
+}
+.slider__block {
+    border: 2px solid #000000;
+    max-width: 100%;
+    overflow: hidden;
+}
+.slider__block__line {
+    display: flex;
+    transition: all ease 1s;
+}
