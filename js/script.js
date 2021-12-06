@@ -17,7 +17,7 @@ function init(){
 window.addEventListener('resize', init);
 init();
 
-document.querySelector('.slider__prev').addEventListener('click', function(){
+document.querySelector('.slider-button__prev').addEventListener('click', function(){
     count--;
     if (count < 0) {
         count = images.length - 1;
@@ -25,7 +25,7 @@ document.querySelector('.slider__prev').addEventListener('click', function(){
     rollSlider();
 });
 
-document.querySelector('.slider__next').addEventListener('click', function(){
+document.querySelector('.slider-button__next').addEventListener('click', function(){
     count++;
     if (count >= images.length) {
         count = 0;
