@@ -696,3 +696,63 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: right;
     color: #222222;
 }
+/*------------------------------------Achievements----------------------------*/
+.achievements {
+    background: #FDF8F5;
+    margin: 130px 0;
+}
+
+.achievements__container {
+
+}
+
+.achievements__container__list {
+}
+
+.achiev-list {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.achiev-list__item {
+    margin: 58px 0;
+}
+
+.achiev-list__item__title {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 125%;
+    color: #222222;
+    text-align: center;
+}
+.achiev-list__item__border-first {
+    width: 135px;
+    height: 3px;
+    background: #222222;
+    text-align: center;
+    margin: 0 0 0 24px;
+}
+.achiev-list__item__border-second {
+    width: 110px;
+    height: 3px;
+    background: #222222;
+    text-align: center;
+    margin: 0 0 0 7px;
+}
+.achiev-list__item__border-three {
+    width: 145px;
+    height: 3px;
+    background: #222222;
+    text-align: center;
+    margin: 0 0 0 16px;
+}
+
+.achiev-list__item__text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 125%;
+    color: #555555;
+    margin: 30px 0 0 0;
+}
