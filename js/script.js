@@ -36,3 +36,4 @@ document.querySelector('.slider-button__next').addEventListener('click', functio
 function rollSlider() {
     sliderBlockLine.style.transform = 'translate(-'+count*width+"px)";
 }
+
