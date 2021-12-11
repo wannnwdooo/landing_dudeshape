@@ -1121,10 +1121,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .footer-menu__item {
+
+}
+.footer-menu__item__link {
     font-weight: normal;
     font-size: 16px;
     line-height: 125%;
     color: #222222;
+}
+.footer-menu__item__link:hover {
+    text-decoration: underline;
 }
 .footer-menu__item:not(:last-child) {
     margin: 0 0 20px 0;
@@ -1174,6 +1180,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     line-height: 125%;
     color: #222222;
     margin: 0 0 20px 0;
+}
+.footer-contact__mail:hover,
+.footer-contact__phone:hover {
+    text-decoration: underline;
 }
 
 .footer-contact__social {
