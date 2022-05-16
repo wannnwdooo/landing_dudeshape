@@ -1196,3 +1196,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .footer-social__icon {
     width: 13px;
 }
+.user-menu__icon {
+    width: 25px;
+}
